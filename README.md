@@ -153,6 +153,12 @@ keychain.
 
 ![pinentry](img/pinentry.png)
 
+#### If you does not allow the password to be saved to Keychain:
+
+```sh
+gpgconf --kill gpg-agent # after echo 'pinentry-program /usr/local/bin/pinentry-mac' > ~/.gnupg/gpg-agent.conf
+```
+
 ### Method 2 - GPG Suite
 
 Some people find that pinentry installed with brew does not allow the password to be saved to macOS's keychain.
